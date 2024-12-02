@@ -79,8 +79,9 @@ conda activate torch
 pip install -r requirements.txt
 ```
 
-### **2. Flask 서버 실행**
-웹캠 데이터를 WSL로 스트리밍하기 위해 Flask 서버를 실행합니다. server.py를 다음과 같이 실행하세요
+### **2. Flask 서버 실행 (option)**
+웹캠 데이터를 WSL로 스트리밍하기 위해 Flask 서버를 실행합니다. (wsl을 사용하여 웹캠을 직접 사용할 수 없는 경우)
+server.py를 다음과 같이 실행하세요
 
 ```bash
 python server.py
