@@ -2,6 +2,13 @@
 # 사용자 맞춤형 인물 촬영 가이드 시스템 개발
 ![썸네일](img/thumbnail.png)  
 
+**아주대학교 권병수**
+dancheong99@gmail.com
+
+<img width="100%" src="https://github.com/user-attachments/assets/9fc8f74c-1bf3-451c-9472-c95aeb7df14f"/>
+<img width="100%" src="https://github.com/user-attachments/assets/69580d37-29ae-4b49-8bc8-64ec2e680233"/>
+
+
 ## 프로젝트 소개
 **"사용자 맞춤형 인물 촬영 가이드 시스템"**은 Human Pose Estimation과 그래프 기반 딥러닝(GAT)을 결합하여 사용자가 사진 촬영 시 더욱 자연스럽고 이상적인 포즈를 취할 수 있도록 가이드를 제공하는 시스템입니다.  
 본 프로젝트는 VitPose를 활용한 정밀한 포즈 추정과, **Graph Attention Networks(GAT)**를 이용한 포즈 평가 및 피드백 제공 기능을 중심으로 설계되었습니다.
@@ -44,6 +51,8 @@
 
 ## 시스템 동작 이미지
 
+![시스템 소개 탬플릿](img/template.png) 
+
 ### **Human Pose Estimation 및 평가 시각화**
 
 ![실시간 포즈 추정 결과](img/webcam_demo.gif)  
@@ -71,7 +80,7 @@
 
 ### **1. 환경 설정**
 
-본 프로젝트는 Anaconda 환경에서 실행됩니다. 아래 명령어를 통해 새로운 가상 환경을 생성하고 필요한 패키지를 설치합니다:
+본 프로젝트는 Anaconda 환경에서 실행됩니다. 아래 명령어를 통해 새로운 가상 환경을 생성하고 필요한 패키지를 설치합니다
 
 ```bash
 conda create -n torch python=3.9.20
@@ -89,11 +98,12 @@ python server.py
 이 명령은 Flask 서버를 시작하며, 웹캠 데이터를 HTTP 스트림으로 제공하게 됩니다.
 
 ### **3. 실시간 시스템 실행**
-server_cam_demo.py를 실행하여 Human Pose Estimation 및 GAT 기반 평가 모델을 실행합니다:
+server_cam_demo.py를 실행하여 Human Pose Estimation 및 GAT 기반 평가 모델을 실행합니다
 ```bash
 python server_cam_demo.py
 ```
 이 명령은 실시간으로 웹캠 데이터를 수신하고, 포즈 추정 및 평가를 수행하며, 결과를 시각화합니다.
+https://github.com/ViTAE-Transformer/ViTPose의 usage 항목을 참고하여 mmcv, ViTPose 등을 설치합니다.
 
 ### **4. 실행 중 주요 명령**
 실시간 실행 중 사용 가능한 명령은 다음과 같습니다:
